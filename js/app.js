@@ -159,13 +159,12 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+    document.getElementById("reported").innerHTML = "<h1>Reported posts</h1>";
     const reportedPosts = getReportedPosts();
     reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById("reported").appendChild(div);
     });
-
-    reportedPostsId = [];
 };
 
 const loadPosts = async () => {
