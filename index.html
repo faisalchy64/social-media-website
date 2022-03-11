@@ -53,6 +53,45 @@
 
         <div id="reported"></div>
     </main>
+
+    <section class="my-5">
+        <div class="container">
+            <h1 class="mb-4">Concepts</h1>
+            <div>
+                <h3>How does javascript work?</h3>
+                <p>JavaScript is a single threaded client side programming language. Single threaded means, it can do a
+                    work at a time. JavaScript code runs on web browser and also terminal with the help of nodejs run
+                    time. But how can web browser and nodejs understand the javascript code? Every web browser's has a
+                    mechanism or a engine. Example - chrome browser has v8 engine, edge browser has chakra engine,
+                    safari browser has javascript core engine, firebox browser has spidermonkey engine etc. The browser
+                    engine then converts the JavaScript code into machine language. Then our machine can understand the
+                    code and display the output. Also nodejs use v8 engine.
+                </p>
+            </div>
+
+            <div>
+                <h3>What does javascript event loop do?</h3>
+                <p>By default JavaScript works synchronously. What does mean synchronous? This means it will block all
+                    other work until it is finished. If there is a heavy work, then it will take long time. For this
+                    reason, we can not do other work until the work will finish. Javascript can also work on
+                    asynchronously. If javascript do heavy work asynchronously then it will not block other works.
+                    Browser engine has two parts, <strong>HEAP</strong> and <strong>CALL STACK</strong> and also some
+                    assistant named WEB APIS and <strong>CALLBACK QUEUE</strong>. <strong>CALL STACK</strong> executes
+                    all our JavaScript code. If <strong>CALL STACK</strong> found any asynchronous work, then it
+                    transfer this work to the web api. Web api after finish the work, it transfer the work to the
+                    <strong>CALLBACK QUEUE</strong>. When the <strong>CALL STACK</strong> is empty, there is a middle
+                    person called Event Loop, who transfers the work from the <strong>CALLBACK QUEUE</strong> to the
+                    <strong>CALL STACK</strong>. Then the <strong>CALL STACK</strong> executes the work.
+                </p>
+            </div>
+
+            <div>
+                <h3>Difference between local storage and session storage?</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+
     <footer></footer>
 
     <!-- add javascript  file  -->
